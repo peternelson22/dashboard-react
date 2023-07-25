@@ -3,7 +3,7 @@ const Footer = () => {
   return (
     <footer className='footer'>
       <span>rennnns</span>
-      <span>react dashboard</span>
+      <span>awesome dashboard</span>
     </footer>
   );
 };
