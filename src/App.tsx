@@ -6,6 +6,7 @@ import Home from './pages/home/Home';
 import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import './styles/index.scss';
+import Login from './pages/login/Login';
 
 function App() {
   const Layout = () => {
@@ -13,7 +14,7 @@ function App() {
       <div className='main'>
         <Navbar />
         <div className='container'>
-          <div className='mainContainer'>
+          <div className='menuContainer'>
             <Menu />
           </div>
           <div className='contentContainer'>
@@ -35,14 +36,18 @@ function App() {
           element: <Home />,
         },
         {
-          path: 'users',
+          path: '/users',
           element: <Users />,
         },
         {
-          path: 'products',
+          path: '/products',
           element: <Products />,
         },
       ],
+    },
+    {
+      path: '/login',
+      element: <Login />,
     },
   ]);
   return <RouterProvider router={router} />;
