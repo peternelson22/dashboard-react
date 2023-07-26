@@ -7,6 +7,8 @@ import Users from './pages/users/Users';
 import Products from './pages/products/Products';
 import './styles/index.scss';
 import Login from './pages/login/Login';
+import Product from './pages/product/Product';
+import User from './pages/user/User';
 
 function App() {
   const Layout = () => {
@@ -42,6 +44,14 @@ function App() {
         {
           path: '/products',
           element: <Products />,
+        },
+        {
+          path: '/products/:id',
+          element: <Product />,
+        },
+        {
+          path: '/users/:id',
+          element: <User />,
         },
       ],
     },
